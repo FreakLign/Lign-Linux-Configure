@@ -1,0 +1,90 @@
+#===============Auto Head=================
+snippet xehead "Head" bA
+%! Tex program=xelatex
+\documentclass{article}
+\usepackage{xeCJK}
+\usepackage{geometry}[2cm,2cm,2cm,2cm]
+\title{$1}
+\author{Lign}
+\date{$2}
+\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\newpage
+	\tableofcontents
+	\thispagestyle{empty}
+	\newpage
+	\setcounter{page}{1}
+	$3
+\end{document}
+endsnippet
+
+
+#============Auto Begin End===============
+snippet beg "begin{} / end{}" 
+\begin{$1}
+	$0
+\end{$1}
+endsnippet
+
+
+#============Text Bold Font===============
+snippet bf "\textbf{}" i
+\textbf{$1}
+endsnippet
+
+
+#=================斜体====================
+snippet emph "\emph{}" i
+\emph{$1}
+endsnippet
+
+
+#==============Paragraph==================
+snippet p "paragraph" i
+\paragraph{$1}
+endsnippet
+
+
+#=================单词====================
+snippet voc "vocabularies" b
+\section{$1}
+\paragraph{$2} $[$3]$
+\paragraph{$4} $[$5]$
+$6
+endsnippet
+
+
+#=================注释====================
+snippet ft "footnote" i
+\footnote{$1}
+endsnippet
+
+
+#=================例句====================
+snippet vocs "vocabulary's sentense" b
+\section{$1}
+\paragraph{Sentence} $2
+\paragraph{$3}
+$4
+endsnippet
+
+
+#=================实例====================
+snippet ul "underline" i
+\underline{$1}
+endsnippet
+
+
+#=================实例====================
+snippet sents "sentence" i
+\paragraph{Sentence} $1
+\paragraph{$2}
+$3
+endsnippet
+
+
+#=================实例====================
+#snippet KeyWord "Discreption"
+#<Input Sentence>
+#endsnippet
